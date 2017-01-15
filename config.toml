@@ -1,0 +1,13 @@
+baseurl = "http://internationalistperspective.org"
+languageCode = "en-us"
+title = "Internationalist Perspective"
+disqusShortname = "internationalistperspective"
+[blackfriday]
+  fractions = false
+
+[indexes]
+  issue = "issues"
+  article = "articles"
+
+[taxonomies]
+  issue = "issues"

@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="image">
+        <a href="{{ .Permalink }}">
+            <img class="ui medium image" src="{{ .Params.cover }}">
+        </a>
+    </div>
+    <div class="content">
+        <a class="ui small header" href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="meta">
+            <a>{{ .Params.publication }}</a>
+        </div>
+    </div>
+</div>

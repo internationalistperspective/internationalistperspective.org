@@ -1,0 +1,9 @@
+<article class="post">
+    <header>
+      <h2 class="ui header"><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h2>
+    </header>
+    {{ .Summary }}
+    <footer>
+        <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
+    </footer>
+</article>

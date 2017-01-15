@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<body lang="en">
+{{ partial "subheader.html" . }}
+<section id="main">
+    <div class="ui stackable grid">
+        <div class="six wide column">
+            {{ partial "current_issue_card.html" . }}
+            {{ partial "download_pdf.html" . }}
+        </div>
+        <div class="ten wide column">
+            {{ partial "table_of_contents.html" . }}        
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}

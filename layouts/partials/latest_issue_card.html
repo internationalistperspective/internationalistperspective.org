@@ -1,0 +1,18 @@
+<div class="ui fluid card">
+    <div class="content">
+        <div class="ui medium header">Latest Issue</div>
+            <div class="ui tall stacked segment">
+                <div class="image">
+                    <a href="{{ .Permalink }}">
+                        <img class="ui medium image" src="{{ .Params.cover }}">
+                    </a>
+                </div>
+            </div>
+        <div class="content">
+            <div class="ui small header">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </div>
+            <div class="meta">{{ .Params.publication }}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="ui segment">
+    <div class="ui medium header">Contents</div> 
+    <div class="ui items">
+    {{ $page_link := .Permalink }}
+    {{ $issue := .Params.issue }}
+    {{ range .Site.Pages.ByWeight }}
+        {{ $page := . }}
+        {{ $has_common_issue := intersect $issue .Params.issue | len | lt 0 }}
+        {{ if and $has_common_issue (ne $page_link $page.Permalink) }}
+            <div class="item">
+                <div class="content">
+                    
+                    <div class="description">{{ .Render "summary" }}</div>
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>
