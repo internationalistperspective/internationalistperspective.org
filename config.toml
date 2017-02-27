@@ -8,6 +8,7 @@ disqusShortname = "internationalistperspective"
 [indexes]
   issue = "issues"
   article = "articles"
+  post = "posts"
 
 [taxonomies]
   issue = "issues"

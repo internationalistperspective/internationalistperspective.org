@@ -1,15 +1,18 @@
-<article class="post">
-    <header>
-        <h4><a href="/article/News-11-22-2016-trump/">This is What Democracy Looks Like</a> </h4>
-    </header>
-    <br />
-    <p>
-        A few questions linger after these elections. Such as: is the new US president a psychopath or is he a sociopath?
-    </p>
-    <p>
-        Whatever the correct diagnosis may be, it can’t be denied that his election testifies to a considerable increase of discontent, disaffection and anxiety in a broad swath of the American population. Trump won, by adding to the traditional Republican votes, those of many in the white working class, who in previous elections voted for Obama or not at all. Let’s not exaggerate his appeal: only a quarter of the eligible voters voted for him; his opponent in fact got at least a million votes more than him but, as you know, he won in the Electoral College. ‘That’s what democracy looks like’, as protesters (unintentionally ironically) shout in American streets, while they’re being chased by the armed protectors of the democratic state.
-    </p>
-    <footer>
-        <a href='/article/News-11-22-2016-trump/'><nobr>Read more →</nobr></a>
-    </footer>
-</article>
+<div class="ui items">
+{{ range first 5 (where .Data.Pages "Section" "post") }}
+    <div class="item">
+        <div class="content">
+            <div class="header"><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></div>
+            <div class="meta">
+                <span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+            </div>
+            <div class="description">
+                {{ .Summary }}
+            </div>
+            <div class="footer">
+                <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
+            </div>
+        </div>
+   </div>
+{{ end }}
+</div>
