@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+<body lang="en">
+{{ partial "subheader.html" . }}
+<section id="main">
+{{ range (.Data.Pages.GroupByParam "issuetitle").Reverse }}
+    <div class="ui segment">
+        <div class="ui medium header">{{ .Key }}</div>
+        <ul>
+        {{ range .Pages }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+            </li>
+        {{ end }}
+        </ul>
+    </div>
+{{ end }}
+
+</section>
+{{ partial "footer.html" . }}
