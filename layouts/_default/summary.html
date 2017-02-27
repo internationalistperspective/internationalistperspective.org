@@ -1,6 +1,6 @@
 <article class="post">
     <header>
-      <h4><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h4>
+      <a class="ui header" href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
     </header>
 
     {{ .Summary }}
