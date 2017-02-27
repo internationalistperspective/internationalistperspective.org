@@ -1,13 +1,11 @@
-<div class="card">
+<div class="ui fluid card">
     <div class="image">
-        <a href="{{ .Permalink }}">
-            <img class="ui medium image" src="{{ .Params.cover }}">
-        </a>
+        <img class="ui medium image" src="{{ .Params.cover }}">
     </div>
     <div class="content">
-        <a class="ui small header" href="{{ .Permalink }}">{{ .Title }}</a>
+        <a class="header" href="{{ .Permalink }}">{{ .Title }}</a>
         <div class="meta">
-            <a>{{ .Params.publication }}</a>
+            <span class="date">{{ .Params.publication }}</span>
         </div>
     </div>
 </div>

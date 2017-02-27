@@ -2,16 +2,18 @@
 <body lang="en">
 {{ partial "subheader.html" . }}
 <div class="ui stackable grid">
-    <div class="six wide column">
-        {{ range first 1 (where .Data.Pages "Section" "issue") }}
-            {{ partial "latest_issue_card.html" . }}
-        {{ end }}
-    </div>
     <div class="ten wide column">
-        <div class="ui segment">
-            <div class="ui medium header">Latest Updates</div>            
+        <div class="ui medium header">Latest Updates</div>
+        <div class="ui segment">            
             {{ partial "latest_posts.html" . }}
         </div>
+    </div>
+    <div class="six wide column">
+        <div class="ui medium header">Latest Issue</div>
+        {{ range first 1 (where .Data.Pages "Section" "issue") }}
+            {{ partial "issue_card.html" . }}
+        {{ end }}
+        <div class="ui medium header">Contact Internationalist Perspective</div>
         {{ partial "contact.html" }}
     </div>
 </div>
