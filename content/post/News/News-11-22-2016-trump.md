@@ -60,10 +60,8 @@ Real change can only come from resistance to capitalism, from refusing its logic
 
 Poverty, wars, dislocation, massive migration will continue, since they are the logical outcome of the inherent dynamic of capitalism.  But that they would continue to be as useful to divide the exploited and the oppressed, is not a given. History does not follow a straight course. We may be “in the calm before the storm”, in which the will to survive will overcome the divisions created amongst us. It’s not a certainty. But it’s a possibility.
 
-####Internationalist Perspective
+#### Internationalist Perspective
 
-[^1]: See: http://www.cbsnews.com/news/80-percent-of-us-adults-face-near-poverty-unemployment-survey-finds/2/  
-
+[^1]: See: http://www.cbsnews.com/news/80-percent-of-us-adults-face-near-poverty-unemployment-survey-finds/2/ 
 [^2]: Similarly, “Occupy Wall Street”, that is the leftists who still use the name of the movement, even though it is a mantle on a corpse, devoted at least 95% of its mailings in the past years to opposition to the TPP free trade-agreement.
-
 [^3]: Nancy Isenberg: WHITE TRASH: The 400-Year Untold History of Class in America, Viking 2016
